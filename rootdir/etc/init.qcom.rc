@@ -228,6 +228,9 @@ on post-fs-data
     mkdir /dev/socket/qmux_gps 0770 gps gps
     chmod 2770 /dev/socket/qmux_gps
 
+    # Mpdecision state
+    mkdir /data/mpdecision 0660 system system
+
     # If there is no fs-post-data action in the init.<device>.rc file, you
     # must uncomment this line, otherwise encrypted filesystems
     # won't work.
